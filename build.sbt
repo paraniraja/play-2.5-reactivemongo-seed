@@ -13,12 +13,9 @@ startYear := Some(2016)
 libraryDependencies ++= Seq(
   "org.reactivemongo" %% "play2-reactivemongo" % "0.11.13",
   "org.reactivemongo" %% "reactivemongo-play-json" % "0.11.14",
-  "com.scalableminds" %% "play-mongev" % "0.5.1",
   "org.mockito" % "mockito-core" % "1.10.19" % Test,
   "org.scalatestplus.play" % "scalatestplus-play_2.11" % "1.5.1" % Test,
-//  "de.flapdoodle.embed" % "de.flapdoodle.embed.mongo" % "1.50.0" % Test,
-  cache,
-  javaWs )
+  cache)
 
 // disable documentation generation
 sources in(Compile, doc) := Seq.empty
